@@ -25,7 +25,7 @@ module.exports = {
                             var ban = new Discord.MessageEmbed()
                             .setTitle("Success!")
                             .setColor("#0cf533")
-                            .setDescription("You successfully banned the stated user.")
+                            .setDescription("You successfully banned the stated user")
                             .setTimestamp();
 
                             message.channel.send(ban);
