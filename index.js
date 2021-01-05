@@ -18,7 +18,7 @@ for(file of commandFiles){
 client.login(process.env.TOKEN);
 
 client.once('ready', (ready) =>{
-    client.user.setActivity('BotTechStudi Moderation System', {type: 'WATCHING'});
+    client.user.setActivity('BotTechStudio Moderation System', {type: 'WATCHING'});
 })
 
 client.on('message', message =>{
