@@ -1,0 +1,23 @@
+{
+  "name": "moderation-bot",
+  "version": "1.0.0",
+  "description": "This is a simple moderation bot to make the life of server owners easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheInfectedWolf/moderation-bot.git"
+  },
+  "author": "PriorAdjudicator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheInfectedWolf/moderation-bot/issues"
+  },
+  "homepage": "https://github.com/TheInfectedWolf/moderation-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
