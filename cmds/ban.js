@@ -11,6 +11,7 @@ module.exports = {
             .setTimestamp();
 
             message.channel.send(embed);
+            return;
         }
 
         if(message.memntions.users.first() == undefined || message.mentions.users.first() == null){
@@ -21,6 +22,7 @@ module.exports = {
             .setTimestamp();
             
             message.channel.send(embed);
+            return;
         }
 
         var user = message.mentions.users.first(), 
@@ -35,6 +37,7 @@ module.exports = {
                 .setTimestamp();
           
             message.channel.send(embed);
+            return;
         }
 
         if(args.length == 1){

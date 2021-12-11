@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
     name: "kick",
-    execute(message, args){
+    async execute(message, args){
       if(!message.member.hasPermission("KICK_MEMBERS")){
         var embed = new Discord.MessageEmbed()
         .setTitle("Insufficient Permissions :warning:")
@@ -11,9 +11,10 @@ module.exports = {
         .setTimestamp();
 
         message.channel.send(embed);
+        return;
       }
 
-      if(message.memntions.users.first() == undefined || message.mentions.users.first() == null){
+      if(message.mentions.users.first() == undefined || message.mentions.users.first() == null){
           var embed = new Discord.MessageEmbed()
           .setTitle("No user mentioned :warning:")
           .setColor("#eb3434")
@@ -21,6 +22,7 @@ module.exports = {
           .setTimestamp();
         
           message.channel.send(embed);
+          return;
       }
 
       var user = message.mentions.users.first(), 
@@ -35,6 +37,7 @@ module.exports = {
           .setTimestamp();
       
           message.channel.send(embed);
+          return;
       }
 
       if(args.length == 1){
